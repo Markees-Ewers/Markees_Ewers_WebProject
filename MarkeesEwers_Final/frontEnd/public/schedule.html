@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Schedule a catering event with Easy Cater. Input your event details and preferences.">
+    <title>Schedule a Catering Event</title>
+    <link rel="icon" href="assets/EZ logo.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/schedule.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <img src="assets/EZ logo.jpg" alt="EZ Cater Logo" class="nav-logo">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="restaurants.html">Restaurants</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+        </ul>
+    </nav>
+
+    <!-- Banner Section -->
+    <header class="banner">
+        <h1>Schedule a Catering Event</h1>
+        <p>Plan your event with us—it's quick and easy!</p>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="schedule-form">
+            <h2>Event Details</h2>
+            <form id="scheduleForm">
+                <label for="restaurantName">Restaurant Name:</label>
+                <input type="text" id="restaurantName" name="restaurantName" readonly>
+            
+                <label for="restaurantEmail">Restaurant Email:</label>
+                <input type="email" id="restaurantEmail" name="restaurantEmail" readonly>
+            
+                <label for="userName">Your Name:</label>
+                <input type="text" id="userName" name="userName" placeholder="Enter your full name" required>
+            
+                <label for="userEmail">Your Email:</label>
+                <input type="email" id="userEmail" name="userEmail" placeholder="Enter your email address" required>
+            
+                <label for="eventDate">Event Date:</label>
+                <input type="date" id="eventDate" name="eventDate" required>
+            
+                <label for="eventTime">Event Time:</label>
+                <input type="time" id="eventTime" name="eventTime" required>
+            
+                <label for="eventLocation">Event Location:</label>
+                <input type="text" id="eventLocation" name="eventLocation" placeholder="Enter event address or venue" required>
+            
+                <label for="guestCount">Number of Guests:</label>
+                <input type="number" id="guestCount" name="guestCount" placeholder="Enter number of guests" min="1" required>
+            
+                <label for="specialRequests">Special Requests:</label>
+                <textarea id="specialRequests" name="specialRequests" rows="4" placeholder="Enter any dietary restrictions or special requests"></textarea>
+            
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Easy Cater. Email: <a href="mailto:me00070@my.westga.edu">me00070@my.westga.edu</a></p>
+    </footer>
+
+    <script src="javaScript/schedule.js"></script>
+</body>
+</html>

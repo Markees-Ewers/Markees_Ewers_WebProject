@@ -1,0 +1,211 @@
+/* Base Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #be2b2b; /* Matches other pages */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation */
+nav {
+    padding: 20px 40px;
+    background-color: #be2b2b;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav li a:hover {
+    color: #ffdddd;
+}
+
+
+/* Banner */
+.banner {
+    background-image: url('../assets/red-chili-pepper-6769603_640.jpg'); /* Adjust image path */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: black;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.banner h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.banner p {
+    font-size: 1.2em;
+}
+
+/* Restaurants Section */
+.restaurants {
+    background-color: whitesmoke; /* Matches index */
+    padding: 40px 20px;
+    text-align: center;
+}.restaurants img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #f5f5f5;
+}
+
+.restaurants h2 {
+    color: #be2b2b;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Restaurant List */
+.restaurant-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+/* Restaurant Item */
+.restaurant-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+}
+
+.restaurant-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.restaurant-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 2px solid #f5f5f5;
+}
+
+.restaurant-item h3 {
+    font-size: 1.5em;
+    color: #be2b2b;
+    margin: 10px 0;
+}
+
+.restaurant-item p {
+    font-size: 1em;
+    color: #666;
+    margin: 10px 0;
+}
+
+/* Schedule Button */
+.schedule-btn {
+    padding: 10px 20px;
+    background-color: #be2b2b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.schedule-btn:hover {
+    background-color: #ff0000;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #ffdddd;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .restaurant-list {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .banner h1 {
+        font-size: 2em;
+    }
+
+    .banner p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 450px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .restaurant-item {
+        padding: 15px;
+    }
+
+    .schedule-btn {
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+}
+nav li a:hover {
+    color: #ff0000;
+    transform: scale(1.1);
+}
+
+/* Logo Styling */
+.logo-link {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Push the logo to the right */
+}
+
+.nav-logo {
+    height: 50px; /* Adjust the height as needed */
+    width: auto;
+    border-radius: 12px; /* Rounds the corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: adds a shadow for effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}

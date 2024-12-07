@@ -1,0 +1,67 @@
+/* Reset styles */
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Base styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #be2b2b;
+    color: #333;
+}
+
+/* Navigation styling */
+nav {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+nav li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav li a:hover {
+    color: #1b1212;
+    transform: scale(1.1);
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+nav li a:hover {
+    color: #ff0000;
+    transform: scale(1.1);
+}
+
+/* Logo Styling */
+.logo-link {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Push the logo to the right */
+}
+
+.nav-logo {
+    height: 50px; /* Adjust the height as needed */
+    width: auto;
+    border-radius: 12px; /* Rounds the corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: adds a shadow for effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}

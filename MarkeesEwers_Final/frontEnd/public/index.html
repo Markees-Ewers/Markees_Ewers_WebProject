@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Become a caterer or become a diner, schedule catering. Order from fast food giants, or local places. Have 5-star food, or your favorite casual eats.">
+    <title>Catering Services</title>
+    <link rel="icon" href="assets/EZ logo.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/modal.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        
+        <ul>
+            <img src="assets/EZ logo.jpg" alt="EZ Cater Logo" class="nav-logo">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="restaurants.html">Restaurants</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+        </ul>
+    </nav>
+
+    <!-- Banner Section -->
+    <header class="banner">
+        <h1>Welcome to Easy Cater</h1>
+        <p>Where Caterers Shine, and Customers Dine.</p>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="customer-options">
+            <button id="dineBtn">Dine</button>
+            <button id="advertiseBtn">Advertise/Post</button>
+        </div>
+      
+    </main>
+
+    <div id="postModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Create a Restaurant Post</h2>
+            <form id="postForm">
+                <label for="restaurantName">Restaurant Name:</label>
+                <input type="text" id="restaurantName" required>
+                
+                <label for="description">Description:</label>
+                <textarea id="description" rows="4" required></textarea>
+                
+                <label for="imageUpload">Upload Image:</label>
+                <input type="file" id="imageUpload" accept="image/*">
+    
+                <label for="imageUrl">Or Enter Image URL:</label>
+                <input type="text" id="imageUrl" placeholder="Enter an image URL">
+    
+                <label for="email">Restaurant Email:</label>
+                <input type="email" id="email" placeholder="Enter restaurant email" required>
+    
+                <button type="submit">Post</button>
+            </form>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Easy Cater. Email: <a href="mailto:me00070@my.westga.edu">me00070@my.westga.edu</a></p>
+    </footer>
+
+    <script src="javaScript/index.js"></script>
+</body>
+<button id="resetBtn" style="background-color: #be2b2b; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+    Reset Website
+</button>
+</html>

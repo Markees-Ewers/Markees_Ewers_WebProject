@@ -1,0 +1,221 @@
+/* Reset styles */
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Base styling */
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #be2b2b; /* Main background color */
+    color: #333;
+  
+    
+}
+
+main {
+    background-color: whitesmoke; /* Background for the main content area */
+    height: 300px;
+}
+
+/* Footer styling */
+footer {
+    color: white;
+    font-style: italic;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+}
+nav li a:hover {
+    color: #ff0000;
+    transform: scale(1.1);
+}
+
+/* Logo Styling */
+.logo-link {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Push the logo to the right */
+}
+
+.nav-logo {
+    height: 50px; /* Adjust the height as needed */
+    width: auto;
+    border-radius: 12px; /* Rounds the corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: adds a shadow for effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+/* Navigation styling */
+nav {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    background-color: #be2b2b; /* Matches the body background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+nav li a {
+    color: #ffffff; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+    font-size: 1.1em; /* Slightly larger text */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+nav li a:hover {
+    color: #1b1212; /* Hover effect color */
+    transform: scale(1.1); /* Slight scaling */
+}
+
+nav li a:visited {
+    color: #ffffff; /* Visited link color */
+}
+
+/* Banner styling */
+.banner {
+    background-image: url('../assets/red-chili-pepper-6769603_640.jpg'); /* Banner image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    align-items: flex-end;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+    
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Customer section styling */
+.customer {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    
+ 
+}
+
+.customer-options {
+    display: flex;
+    gap: 20px;
+    padding: 1em;
+   
+}
+
+/* Enhanced button styling */
+.customer-options input[type="button"] {
+    padding: 15px 30px;
+    background-color: #be2b2b;
+    color: white;
+    border: none;
+    border-radius: 25px; /* Rounded corners */
+    font-size: 16px;
+    font-weight: bold;
+    
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Add depth */
+}
+
+.customer-options input[type="button"]:hover {
+    background-color: #ff0000; /* Bright red on hover */
+    transform: scale(1.1); /* Slight enlargement */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Deeper shadow */
+}
+
+.customer-options input[type="button"]:active {
+    background-color: #c40000; /* Darker red when clicked */
+    transform: scale(1.05); /* Slight shrink on click */
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2); /* Reduced shadow */
+}
+
+/* Responsive styling */
+
+/* Tablet screens */
+@media (max-width: 768px) {
+    nav ul {
+        gap: 20px;
+    }
+
+    .customer-options input[type="button"] {
+        max-width: 200px;
+    }
+}
+
+/* Mobile screens */
+@media (max-width: 450px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .banner {
+        height: 120px;
+        font-size: 1.2em;
+    }
+
+    .customer-options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .customer-options input[type="button"] {
+        width: 100%;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
+/* Enhanced button styling */
+.customer-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Adjust the gap between buttons */
+    justify-content: center; /* Center-align buttons */
+    padding: 1em;
+}
+
+.customer-options button {
+    padding: 15px 30px;
+    background-color: #be2b2b;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.customer-options button:hover {
+    background-color: #ff0000;
+    transform: scale(1.1);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.customer-options button:active {
+    background-color: #c40000;
+    transform: scale(1.05);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+}
